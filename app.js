@@ -6,7 +6,6 @@ const contentModel = require("./models/mycontent");
 const cookieParser = require("cookie-parser");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-const ejs = require("ejs");
 const cros = require("cors");
 const user = require("./routes/user");
 const showNotes = require("./routes/showNotes");
@@ -33,7 +32,7 @@ app.use(cros({
     credentials: true
   }));
 
-app.set("view engine", "ejs");
+
 app.use(express.json());
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
