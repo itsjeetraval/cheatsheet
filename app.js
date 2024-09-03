@@ -17,7 +17,7 @@ const multer = require("multer");
 const path = require("path");
 
 
-const allowedOrigins = ['http://localhost:3000','https://cheatsheetbackend-api.onrender.com',"http://localhost:5173"]
+const allowedOrigins = ['http://localhost:3000','https://cheatsheet-o066.onrender.com',"http://localhost:5173"]
 
 app.use(cros({
     origin: (origin, callback) => {
